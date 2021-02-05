@@ -1,21 +1,175 @@
+<!DOCTYPE html>
 <html>
 <head>
-	<link rel="stylesheet" href="style.css">
+	<title>Portfolio Website</title>
+	<link rel="stylesheet" type="text/css" href="style-main.css">
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
 </head>
-	<body>
-		<section id="banner">
-			<ul id="banner-list">
-				<li><a href="">Home</a></li>
-				<li><a href="">Portfolio</a></li>
-				<li><a href="">Prices</a></li>
-				<li><a href="">Contact</a></li>
-			</ul>
+
+<body>
+
+<script>
+
+/* Dropdown menu animation */
+
+var clickOslo = 10;
+var clickLisboa = 10;
+var clickHamburg = 10;
+
+function osloDropdown() {
+	if (clickOslo%2 == 0) {
+  		document.getElementById("oslo-dropdown").style.display = "block";
+	} else {
+  		document.getElementById("oslo-dropdown").style.display = "none";
+	} clickOslo++;}
+
+function lisboaDropdown() {
+	if (clickLisboa%2 == 0) {
+  		document.getElementById("lisboa-dropdown").style.display = "block";
+	} else {
+  		document.getElementById("lisboa-dropdown").style.display = "none";
+	} clickLisboa++;}
+
+function hamburgDropdown() {
+	if (clickHamburg%2 == 0) {
+  		document.getElementById("hamburg-dropdown").style.display = "block";
+	} else {
+  		document.getElementById("hamburg-dropdown").style.display = "none";
+	} clickHamburg++;}
+
+</script>
+
+	
+
+
+	<header>
+		<section id="logo">
+			<img id="logo-header" src="css/photos/Logo1.png">
 		</section>
-		<div id="container"> 
-			<h1>Coming soon..</h1>
-			<img id="logo" src="Logo.png">
-			<p>We are working around the clock</p>
-			<p>Another line of text!</p>
+
+		<section id="navbar">
+			<ul id="nav-list">
+				<li class="item">
+					<a href="#">Home</a></li>
+				<li class="item">
+					<a href="about.html">About</a></li>
+				<li class="item">
+					<a href="#">Contact</a></li>
+				<li class="category">
+					<a id="oslo-link" onclick="osloDropdown()" href="#">Oslo Gallery</a>
+					<ul id="oslo-dropdown">
+						<li class="item">
+							<a href="#">Opera</a>
+						</li>
+						<li class="item">
+							<a href="#">National</a>
+						</li>
+						<li class="item">
+							<a href="#">Central Station</a>
+						</li>
+					</ul>
+				</li>
+				<li class="category">
+					<a id="lisboa-link" onclick="lisboaDropdown()" href="#">Lisboa Gallery</a>
+					<ul id="lisboa-dropdown">
+						<li class="item">
+							<a href="#">Colombo</a>
+						</li>
+						<li class="item">
+							<a href="#">Graffiti</a>
+						</li>
+						<li class="item">
+							<a href="#">Cabo Verde</a>
+						</li>
+						<li class="item">
+							<a href="#">Resturadores</a>
+						</li>
+						<li class="item">
+							<a href="#">Night Lights</a>
+						</li>
+						<li class="item">
+							<a href="#">Midnight Express</a>
+						</li>
+						<li class="item">
+							<a href="#">Winter Rays</a>
+						</li>
+					</ul>
+				</li>
+				<li class="category">
+					<a id="hamburg-link" onclick="hamburgDropdown()" href="#">Hamburg Gallery</a>
+					<ul id="hamburg-dropdown">
+						<li class="item">
+							<a href="#">Hafencity</a>
+						</li>
+						<li class="item">
+							<a href="#">Breeze</a>
+						</li>
+						<li class="item">
+							<a href="#">Spirit</a>
+						</li>
+						<li class="item">
+							<a href="#">Vocals</a>
+						</li>
+						<li class="item">
+							<a href="#">Direwolf</a>
+						</li>
+						<li class="item">
+							<a href="#">Port Town</a>
+						</li>
+						<li class="item">
+							<a href="#">Showbiz</a>
+						</li>
+						<li class="item">
+							<a href="#">Park Stroll</a>
+						</li>
+						<li class="item">
+							<a href="#">Contemporary</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<p>Copyright © All rights reserved.</p>
+		</section>
+	</header>
+	<main>
+		<section id="carousel">
+    <div class="slide">
+      <img style="margin-left: 0vh;" id="test" src="css/photos/DSC08838.jpg">
+    </div>
+    <div class="slide">
+      <img id="test" src="css/photos/DSC07838.jpg">
+    </div>
+		<div class="slide">
+        <img id="test" src="css/photos/DSC07208-3.jpg">
+    </div>
+    <div class="slide">
+        <img id="test" src="css/photos/DSC00615.jpg">
 		</div>
-	</body>
+		<div class="slide">
+			<img id="test" src="css/photos/DSC01496.jpg">
+		</div>
+		<div class="slide">
+			<img id="test" src="css/photos/DSC04157.jpg">
+		</div>
+		<div class="slide">
+			<img id="test" src="css/photos/DSC00031.jpg">
+		</div>
+		<div class="slide">
+			<img id="test" src="css/photos/DSC09576-2.jpg">
+		</div>
+		<div class="slide">
+			<img id="test" src="css/photos/DSC01359.jpg">
+		</div>
+		<div class="slide">
+			<img id="test" src="css/photos/DSC09414.jpg">
+		</div>
+		<div class="slide">
+			<img id="test" src="css/photos/DSC052991.jpg">
+		</div>
+		<div class="slide">
+			<img id="test" src="css/photos/DSC06358.jpg">
+		</div>
+		</section>
+	</main>
+</body>
 </html>

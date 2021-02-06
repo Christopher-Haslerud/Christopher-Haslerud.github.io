@@ -171,3 +171,10 @@ body::-webkit-scrollbar { /* removes scrolling bar */
 }
 
 
+/* MOBILE VIEW */
+
+@media (max-width: 480px) {
+	header {
+		visibility: hidden;
+	}
+}

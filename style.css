@@ -136,7 +136,6 @@ body::-webkit-scrollbar { /* removes scrolling bar */
 	
 	#logo-header {
 		width: 10%;
-		display: none;
 }
 
 	#nav-list {

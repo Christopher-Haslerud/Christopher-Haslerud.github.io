@@ -7,7 +7,7 @@ html {
 }
 
 header {
-	width: 35vh;
+	width: 15vh;
 	height: 100vh;
 	background-color: white;
 	z-index: 1000;
@@ -84,7 +84,16 @@ p {
 
 
 
+html, body{ /* removes whitespace around page */
+	margin: 0;
+}
+
 /* picture scroll */
+
+.white-space {
+	width: 240px;
+	background-color: white;
+}
 
 #carousel {
 	width: 100%;
@@ -93,6 +102,7 @@ p {
     white-space:nowrap;
     overflow: auto;
 }
+
 
 #carousel::-webkit-scrollbar { /* removes scrolling bar */
   display: none;

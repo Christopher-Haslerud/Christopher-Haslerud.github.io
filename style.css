@@ -55,6 +55,10 @@ p {
 	width: 100%;
 }
 
+#nav-list-mobile {
+	display: none;
+}
+
 #nav-list {
 	color: black;
 	font-family: Quicksand;
@@ -182,9 +186,9 @@ body::-webkit-scrollbar { /* removes scrolling bar */
 
 */
 
-@media screen and (max-width: 768px) {
+@media only screen and (max-width: 768px) {
   header {
-	display: none;
+	
 	width: 100%;
 	height: 8vh;
 	background-color: red;
@@ -203,17 +207,33 @@ body::-webkit-scrollbar { /* removes scrolling bar */
 			left: 0px;
 			opacity: 0.7;
 	}
-}
-	
-	#logo-header {
-		width: 10%;
+
 }
 
+
+#oslo-link {
+	color: black;
+	font-weight: bold;
+}
+
+#portfolio-dropdown {
+	display: none;
+}
+
+	#logo-header {
+		display: none;
+		width: 20%;
+}
 	#nav-list {
+		display: none;
+	}
+
+	#nav-list-mobile {
 		color: red;
 		font-family: Quicksand;
 		display: flex;
 		flex-direction: row;
+		background-color: beige;
 		list-style-type: none;
 		text-decoration: none;
 }
@@ -226,7 +246,9 @@ body::-webkit-scrollbar { /* removes scrolling bar */
 	}
 
 	a {
-		font-size: 10px;
+		font-size: 20px;
+		: 10px;
+		background-color: blue;
 	}
 
 	#nav-list .item {

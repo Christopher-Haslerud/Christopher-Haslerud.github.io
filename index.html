@@ -10,34 +10,44 @@
 <body>
 
 <script>
-
 /* Dropdown menu animation */
 
 var clickOslo = 10;
 var clickLisboa = 10;
 var clickHamburg = 10;
+var clickPortfolio = 10;
+
+/* Dropdown menus - DESKTOP */
 
 function osloDropdown() {
 	if (clickOslo%2 == 0) {
-  		document.getElementById("oslo-dropdown").style.display = "block";
+  document.getElementById("oslo-dropdown").style.display = "block";
 	} else {
-  		document.getElementById("oslo-dropdown").style.display = "none";
+  document.getElementById("oslo-dropdown").style.display = "none";
 	} clickOslo++;}
 
 function lisboaDropdown() {
 	if (clickLisboa%2 == 0) {
-  		document.getElementById("lisboa-dropdown").style.display = "block";
+  document.getElementById("lisboa-dropdown").style.display = "block";
 	} else {
-  		document.getElementById("lisboa-dropdown").style.display = "none";
+  document.getElementById("lisboa-dropdown").style.display = "none";
 	} clickLisboa++;}
 
 function hamburgDropdown() {
 	if (clickHamburg%2 == 0) {
-  		document.getElementById("hamburg-dropdown").style.display = "block";
+  document.getElementById("hamburg-dropdown").style.display = "block";
 	} else {
-  		document.getElementById("hamburg-dropdown").style.display = "none";
+	document.getElementById("hamburg-dropdown").style.display = "none";
 	} clickHamburg++;}
 
+	/* Dropdown menus - MOBILE */
+
+	function portfolioDropdown() {
+	if (clickPortfolio%2 == 0) {
+  document.getElementById("portfolio-dropdown").style.display = "block";
+	} else {
+  document.getElementById("portfolio-dropdown").style.display = "none";
+	} clickPortfolio++;}
 </script>
 
 	
@@ -47,7 +57,6 @@ function hamburgDropdown() {
 		<section id="logo">
 			<img id="logo-header" src="photos/Logo1.png">
 		</section>
-
 		<section id="navbar">
 			<ul id="nav-list">
 				<li class="item">
@@ -131,8 +140,33 @@ function hamburgDropdown() {
 			</ul>
 			<p>Copyright © All rights reserved.</p>
 		</section>
+		<section id="navbar-mobile">
+			<ul id="nav-list-mobile">
+				<li class="item">
+					<a href="#">Home</a></li>
+				<li class="item">
+					<a href="about.html">About</a></li>
+				<li class="item">
+					<a href="#">Contact</a></li>
+				<li class="category">
+					<a id="portfolio-link" onclick="portfolioDropdown()" href="#">PORTFOLIO</a>
+					<ul id="portfolio-dropdown">
+						<li class="item">
+							<a href="#">Norway</a>
+						</li>
+						<li class="item">
+							<a href="#">Portugal</a>
+						</li>
+						<li class="item">
+							<a href="#">Germany</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+			<p>Copyright © All rights reserved.</p>
+		</section>
 	</header>
-	<main>
+	<main></main>
 		<section id="carousel">
 			<div class="slide">
 				<p style="width: 240px;"></p>
